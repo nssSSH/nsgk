@@ -47,8 +47,7 @@ main:
 .halt:
   jmp .halt
   
-msg_hello: db "Hello world from NSGK!", ENDL
-  db "I wanted to add ASCII art but it was too difficult!!!", ENDL, 0
+msg_hello: db "Hello world from NSGK!", ENDL, 0
 
 times 510-($-$$) db 0
 dw 0AA55h
